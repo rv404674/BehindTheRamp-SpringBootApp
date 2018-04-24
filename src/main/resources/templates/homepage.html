@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html
+xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Home Page</title>
+</head>
+<body>
+	<h1>Success, You are on the home page!</h1>
+	<a style="color: blue" th:href="@{/normaluserpage}">NormalUserPage</a>
+	<br />
+	<a style="color: blue" th:href="@{/adminpage}">AdminPage</a>
+</body>
+</html>

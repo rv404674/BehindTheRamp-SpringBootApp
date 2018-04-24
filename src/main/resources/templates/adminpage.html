@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<title>Admin Page- Simple Login Application with security</title>
+</head>
+<body>
+	<h1>You are on the Admin Page</h1>
+	<p>Here you can search for a given starting word in the list of all of the users in database</p>
+	<a style="color: blue" th:href="@{/}">Home</a>
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="Sign Out" />
+	</form>
+</body>
+</html>
